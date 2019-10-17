@@ -4,8 +4,10 @@ body {
 
 h1 {
   font-family: 'Raleway', sans-serif;
-  text-decoration: underline rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
   margin-left: 15px;
+  display: inline-block;
 }
 
 .container {
@@ -14,11 +16,13 @@ h1 {
 }
 
 .box {
+  /* A lui qu'on donne une taille avec flex-basis*/
   flex: 1 1 250px;
   padding: 15px;
 }
 
 img {
+  /* doit prendre toute la place disponible de son conteneur. En % pas en px pour rester responsive.*/
   width: 100%;
   height: 100%;
 }
